@@ -1,4 +1,4 @@
-package edu.ucaldas.poo.bases;
+package edu.ucaldas.poo.cuentabancaria;
 
 // Fig. 3.9: AccountTest.java
 // Inputting and outputting floating-point numbers with Account objects.
@@ -20,9 +20,7 @@ public class AccountTest {
 
       System.out.print("Enter deposit amount for account1: "); // prompt
       double depositAmount = input.nextDouble(); // obtain user input
-      System.out.printf("%nadding %.2f to account1 balance%n%n", 
-         depositAmount);
-      account1.deposit(depositAmount); // add to account1's balance
+      account1.depositAndConfirm(depositAmount); 
 
       // display balances
       System.out.printf("%s balance: $%.2f%n",

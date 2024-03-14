@@ -1,4 +1,4 @@
-package edu.ucaldas.poo.bases;
+package edu.ucaldas.poo.cuentabancaria;
 // Fig. 3.8: Account.java
 // Account class with a double instance variable balance and a constructor
 // and deposit method that perform validation.
@@ -24,6 +24,15 @@ public class Account {
          balance = balance + depositAmount; // add it to the balance 
       }
    }
+   
+   public String depositAndConfirm(double depositAmount) {      
+	      if (depositAmount > 0.0) { // if the depositAmount is valid
+	         balance = balance + depositAmount; // add it to the balance 
+	      }
+		return "The current amount is" + balance;
+	   }
+   
+   
 
    // method returns the account balance
    public double getBalance() {
